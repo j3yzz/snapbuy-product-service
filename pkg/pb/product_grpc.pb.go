@@ -65,7 +65,6 @@ type ProductServiceServer interface {
 	CreateProduct(context.Context, *CreateProductRequest) (*CreateProductResponse, error)
 	FindOne(context.Context, *FindOneRequest) (*FindOneResponse, error)
 	DecreaseStock(context.Context, *DecreaseStockRequest) (*DecreaseStockResponse, error)
-	mustEmbedUnimplementedProductServiceServer()
 }
 
 // UnimplementedProductServiceServer must be embedded to have forward compatible implementations.
